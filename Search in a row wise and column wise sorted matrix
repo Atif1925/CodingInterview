@@ -1,0 +1,29 @@
+public class Main
+{
+	public static void main(String[] args) {
+		//System.out.println("Hello World");
+		int[][] arr = {
+		    {10,20,30,40},
+		    {15,25,35,45},
+		    {17,29,37,48},
+		    {32,33,39,50}
+		};
+		int i = 0;
+		int j = arr[0].length-1;
+		
+		int target = 29;
+		
+		while(i<idx+1 && j>=0){
+		    if(arr[i][j] == target){
+		        System.out.println( i +" "+ j);
+		        break;
+		    }
+		    else if(arr[i][j] > target){
+		        j--;
+		    }
+		    else{
+		        i++;
+		    }
+		}	
+	}
+}
