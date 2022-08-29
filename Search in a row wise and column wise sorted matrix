@@ -13,7 +13,7 @@ public class Main
 		
 		int target = 29;
 		
-		while(i<idx+1 && j>=0){
+		while(i<j && j>=0){
 		    if(arr[i][j] == target){
 		        System.out.println( i +" "+ j);
 		        break;
